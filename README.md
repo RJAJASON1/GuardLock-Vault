@@ -10,7 +10,6 @@ It provides a simple menu-driven interface while enforcing strict encryption rul
 
 - 🔑 **Lock Code–Based Security**
   - All data is protected using a user-defined lock code.
-  - Encryption keys are derived using **PBKDF2 + SHA-256** with a high iteration count.
 
 - 🔒 **Encrypted Password Storage**
   - Store passwords securely in an encrypted vault.
@@ -21,17 +20,12 @@ It provides a simple menu-driven interface while enforcing strict encryption rul
   - View locked files without permanently decrypting them.
 
 - 📁 **Secure Files**
-  - Lock any text-based file into an encrypted `.locked` file. Only text files (.txt)
+  - Lock any type of file into an encrypted `.locked` file.
   - Original files are deleted after being secured.
 
 - 📤 **Export Decrypted Data**
   - Export encrypted password files into **plain text** when needed.
-  - Exported files are placed automatically into the `data/exports` folder.
-
-- 🔄 **Reset Lock Code**
-  - Change your lock code while preserving encrypted data.
-  - Data is decrypted in memory and re-encrypted securely.
-  - No plaintext is ever written to disk during the reset process.
+  - Exported files are placed automatically into the Desktop.
 
 - 🧹 **System Reset**
   - Completely wipe all stored data and encrypted files.
@@ -39,39 +33,6 @@ It provides a simple menu-driven interface while enforcing strict encryption rul
 - 🔐 **Strong Cryptography**
   - Uses AES-based Fernet encryption
   - PBKDF2HMAC with 390,000 iterations
-  - Random per-file salt
-
----
-
-## 🗂️ Folder Structure
-
-```
-GuardLock_Vault/
-├── data/
-│   ├── passwordprotected/
-│   │   └── hashed_passwords.txt
-│   ├── securedpasswordslist/
-│   │   └── *.locked
-│   └── exports/
-│       └── *_decrypted.txt
-├── GuardLock_Vault.py
-└── README.md
-```
-
----
-
-## 🚀 How to Run
-
-### Run with Python
-```bash
-python GuardLock_Vault.py
-```
-
-### Run as Executable
-Double-click the executable or run it from Command Prompt:
-```bat
-GuardLockVault.exe
-```
 
 ---
 
@@ -83,18 +44,6 @@ GuardLockVault.exe
 - No encryption keys are stored on disk.
 
 ⚠️ If the lock code is permanently lost, encrypted data cannot be recovered.
-
----
-
-## 🛠 Dependencies
-
-- Python 3.9+
-- cryptography
-
-Install dependency:
-```bash
-pip install cryptography
-```
 
 ---
 
