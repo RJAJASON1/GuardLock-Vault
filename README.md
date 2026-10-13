@@ -1,4 +1,4 @@
-# 🔐 GuardLock Vault
+# 🛡️ GuardLock Vault
 
 **GuardLock Vault** is a secure, terminal-based password and file protection system designed to safely store, encrypt, export, and manage sensitive data using strong cryptography.
 
@@ -9,7 +9,7 @@ It provides a simple menu-driven interface while enforcing strict encryption rul
 ## ✨ Features
 
 - 🔑 **Lock Code–Based Security**
-  - All data is protected using a user-defined lock code.
+  - All data is protected using a user-defined lock code or password.
 
 - 🔒 **Encrypted Password Storage**
   - Store passwords securely in an encrypted vault.
